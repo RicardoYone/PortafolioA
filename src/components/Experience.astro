@@ -1,0 +1,28 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCIE = [
+  {
+    date: "Actualmente...",
+    title: "Desarrollador Web Full Stack − Xplora Technology",
+    description:
+      "Me encargaba del mantenimiento de la pagina de la empresa. https://www.xplora.com.pe/xplora Creaba funcionalidades, base de datos, etc. Todo lo que es programacion",
+    link: "https://www.xplora.com.pe/xplora",
+  },
+  {
+    date: "Enero 2022",
+    title: "Servicio Tecnico  − Konecta BPO",
+    description:
+      "Responsable el mantenimiento de los aplicativos y equipos de computo, impresoras, etc. Tambien me encargaba de la instalacion de software, hardware, etc. (Virtual)",
+  },
+]
+---
+
+<ol class="relative border-s border-gray-200 ml-3">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="mb-10 ms-4">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>
